@@ -154,7 +154,7 @@ class Parse {
                     guard let data = ParseData(price: price, dinamyc1h: 0.0, dinamyc24h: din * 100, dinamyc7d: 0.0) as? ParseData else {
                         return}
                     
-                    print("Bitfinex price: \(data.price) \n")
+//                    print("Bitfinex price: \(data.price) \n")
                     
                     NotificationCenter.default.post(Notification(name: .bitfinex, object: data))
                 } else {
